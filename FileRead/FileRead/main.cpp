@@ -13,6 +13,7 @@
 
 int main() {
     char ch;
+    char ch2;
     
     std::ifstream in_stream;
     in_stream.open(FILE);
@@ -30,8 +31,10 @@ int main() {
     
     bool skip = true;
     
+    in_stream >> std::noskipws;
     while (!in_stream.eof()){
         in_stream >> ch;
+        in_stream >> ch2;
         
         skip = !skip;
         if(!skip){
@@ -63,3 +66,5 @@ int main() {
     
     return 0;
 }
+
+//tip: tel aantal characters in file,
