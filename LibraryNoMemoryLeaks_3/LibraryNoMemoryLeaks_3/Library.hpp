@@ -12,6 +12,7 @@
 class Library {
 public:
     Library();
+    virtual ~Library();
     
     void toon();
     

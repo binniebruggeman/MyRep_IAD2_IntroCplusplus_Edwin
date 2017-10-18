@@ -14,6 +14,8 @@ public:
     Book();
     Book(std::string type);
     
+    virtual ~Book();
+    
     std::string _type = "unknown";
 };
 
